@@ -1,0 +1,24 @@
+# requirements.txt
+# ─────────────────────────────────────────────────────────────────────────────
+# Sistema LSM Abecedario
+# Instalar con: pip install -r requirements.txt
+#
+# Para GPU (CUDA 12.x)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Vision y captura
+opencv-python>=4.9.0
+mediapipe>=0.10.9
+
+# Deep Learning
+torch>=2.2.0
+torchvision>=0.17.0
+
+# ML utilities
+scikit-learn>=1.4.0
+numpy>=1.26.0
+
+# Visualización / análisis
+matplotlib>=3.8.0
+seaborn>=0.13.0
+Pillow>=10.2.0 
