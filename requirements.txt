@@ -1,6 +1,5 @@
 # requirements.txt
 # ─────────────────────────────────────────────────────────────────────────────
-# Sistema LSM Abecedario
 # Instalar con: pip install -r requirements.txt
 #
 # Para GPU (CUDA 12.x)
