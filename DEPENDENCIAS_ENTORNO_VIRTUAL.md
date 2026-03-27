@@ -28,6 +28,52 @@ python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 ```
 
+### Ubuntu (maquina virtual)
+
+Si estas dentro de una VM con Ubuntu, primero instala dependencias del sistema:
+
+```bash
+sudo apt update
+sudo apt install -y python3 python3-venv python3-pip build-essential
+```
+
+Luego crea y activa el entorno virtual en la carpeta del proyecto:
+
+```bash
+cd /ruta/al/proyecto
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+```
+
+Si prefieres instalar libreria por libreria con sus versiones minimas, usa:
+
+```bash
+python3 -m pip install \
+	opencv-python>=4.9.0 \
+	mediapipe>=0.10.9 \
+	torch>=2.2.0 \
+	torchvision>=0.17.0 \
+	scikit-learn>=1.4.0 \
+	numpy>=1.26.0 \
+	matplotlib>=3.8.0 \
+	seaborn>=0.13.0 \
+	Pillow>=10.2.0
+```
+
+Para validar las versiones instaladas:
+
+```bash
+python3 -m pip show opencv-python mediapipe torch torchvision scikit-learn numpy matplotlib seaborn Pillow
+```
+
+Opcional (si usas interfaz grafica o quieres evitar errores de OpenCV en algunos entornos):
+
+```bash
+sudo apt install -y libgl1 libglib2.0-0
+```
+
 ### Windows (PowerShell)
 
 ```powershell
